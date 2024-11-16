@@ -10,13 +10,11 @@ The API is used to predict for prediction of Soil Status. The Training model for
 | /dashboard | A small UI to see the details of the Smart Irrigation System. |
 | /predict | Where POST request is sent for predictiion. |
 #
-**/dashboard UI<br>**
-1. Images:<br>
+**/dashboard UI Media<br>**
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
-  <img src="https://i.imgur.com/TbgZTCR.png" alt="Dashboard UI 1" style="width: 300px; height: auto;">
-  <img src="https://i.imgur.com/cBcgHMk.png" alt="Dashboard UI 2" style="width: 300px; height: auto;">
+  <img src="https://i.imgur.com/TbgZTCR.png" alt="Dashboard UI 1" style="width: 300px; height: 300px;">
+  <img src="https://i.imgur.com/cBcgHMk.png" alt="Dashboard UI 2" style="width: 300px; height: 300px;">
 </div>
-2. Video:<br><br>
 
 [![Watch the video](https://img.youtube.com/vi/4a8zPJVXBd0/0.jpg)](https://youtu.be/4a8zPJVXBd0)
 
