@@ -17,7 +17,7 @@ The API is used to predict for prediction of Soil Status.<br>
   <img src="https://i.imgur.com/cBcgHMk.png" alt="Dashboard UI 2" style="width: 300px; height: auto;">
 </div>
 2. Video:<br>
-[![Watch the video](https://img.youtube.com/vi/4a8zPJVXBd0/0.jpg)](https://youtu.be/4a8zPJVXBd0)
+Watch the demo video [here](https://youtu.be/4a8zPJVXBd0). <br>
 #
 **LANGUAGES**
 > Python (3.11+).
