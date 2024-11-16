@@ -12,8 +12,8 @@ The API is used to predict for prediction of Soil Status. The Training model for
 #
 **/dashboard UI Media<br>**
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
-  <img src="https://i.imgur.com/TbgZTCR.png" alt="Dashboard UI 1" style="width: 300px; height: 400px;">
-  <img src="https://i.imgur.com/cBcgHMk.png" alt="Dashboard UI 2" style="width: 300px; height: 400px;">
+  <img src="https://i.imgur.com/TbgZTCR.png" alt="Dashboard UI 1" style="width: 500px; height: 400px;">
+  <img src="https://i.imgur.com/cBcgHMk.png" alt="Dashboard UI 2" style="width: 500px; height: 400px;">
 </div>
 
 [![Watch the video](https://img.youtube.com/vi/4a8zPJVXBd0/0.jpg)](https://youtu.be/4a8zPJVXBd0)
