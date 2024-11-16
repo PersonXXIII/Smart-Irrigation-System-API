@@ -11,10 +11,11 @@ The API is used to predict for prediction of Soil Status.<br>
 | /predict | Where POST request is sent for predictiion. |
 #
 **/dashboard UI<br>**
-<div style="display: flex; justify-content: space-between; gap: 10px;">
-  <img src="https://i.imgur.com/TbgZTCR.png" alt="Dashboard UI 1" style="width: 45%;"/>
-  <img src="https://i.imgur.com/cBcgHMk.png" alt="Dashboard UI 2" style="width: 45%;"/>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+  <img src="https://i.imgur.com/TbgZTCR.png" alt="Dashboard UI 1" style="width: 300px; height: auto;">
+  <img src="https://i.imgur.com/cBcgHMk.png" alt="Dashboard UI 2" style="width: 300px; height: auto;">
 </div>
+
 
 #
 **LANGUAGES**
