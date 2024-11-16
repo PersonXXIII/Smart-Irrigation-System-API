@@ -3,6 +3,13 @@
 **INTRODUCTION<br>**
 The API is used to predict for prediction of Soil Status.<br>
 #
+**ROUTES<br>**
+| **Routes** | **Desc** |
+|----------------|----------------|
+| / | It is just the index of API that says, Welcome. |
+| /dashboard | A small UI to see the details of the Smart Irrigation System. |
+| /predict | Where POST request is sent for predictiion. |
+#
 **LANGUAGES**
 > Python (3.11+).
 #
