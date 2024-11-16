@@ -10,8 +10,9 @@ The API is used to predict for prediction of Soil Status.<br>
 | /dashboard | A small UI to see the details of the Smart Irrigation System. |
 | /predict | Where POST request is sent for predictiion. |
 #
-/dashboard UI
-<img src="https://i.imgur.com/TbgZTCR.png" title="source: imgur.com" /> <img src="https://i.imgur.com/cBcgHMk.png" title="source: imgur.com" />
+**/dashboard UI**
+<img src="https://i.imgur.com/TbgZTCR.png" title="source: imgur.com" /><br>
+<img src="https://i.imgur.com/cBcgHMk.png" title="source: imgur.com" /><br>
 #
 **LANGUAGES**
 > Python (3.11+).
