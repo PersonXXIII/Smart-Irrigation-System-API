@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .data-container {
+            display: inline-block;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .data-item {
+            margin: 10px 0;
+        }
+        .pump-status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .bulb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #ccc; /* Default color */
+        }
+        .on {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Smart Irrigation System Dashboard</h1>
+    <div class="data-container">
+        <div class="data-item">Temperature: <span id="temperature">N/A</span></div>
+        <div class="data-item">Soil Moisture: <span id="soil-moisture">N/A</span></div>
+        <div class="data-item">Pressure: <span id="pressure">N/A</span></div>
+        <div class="data-item">Altitude: <span id="altitude">N/A</span></div>
+        <div class="data-item">Predicted Class: <span id="predicted-class">N/A</span></div>
+        <div class="data-item">Time <span id="time">N/A</span></div>
+        <div class="data-item">Date <span id="date">N/A</span></div>
+    </div>
+
+    <!-- Pump Status Section -->
+    <div class="pump-status">
+        <span id="pump-status-text">Pump is OFF</span>
+        <div id="pump-bulb" class="bulb"></div>
+    </div>
+
+    <script>
+        // Function to update the UI with the latest data
+        function updateDashboard() {
+            $.getJSON('/get_latest_data', function(data) {
+                $('#temperature').text(data.temperature || 'N/A');
+                $('#soil-moisture').text(data.soil_moisture || 'N/A');
+                $('#pressure').text(data.pressure || 'N/A');
+                $('#altitude').text(data.altitude || 'N/A');
+                $('#predicted-class').text(data.predicted_class || 'N/A');
+                $('#time').text(data.time || 'N/A');
+                $('#date').text(data.date || 'N/A');
+
+                // Check the predicted class and update the pump status
+                if (data.predicted_class === 'Dry' || data.predicted_class === 'Very Dry') {
+                    $('#pump-status-text').text('Pump is ON');
+                    $('#pump-bulb').addClass('on'); // Turn on the green bulb
+                } else {
+                    $('#pump-status-text').text('Pump is OFF');
+                    $('#pump-bulb').removeClass('on'); // Turn off the green bulb
+                }
+            });
+        }
+
+        // Update the dashboard every 5 seconds
+        setInterval(updateDashboard, 5000);
+
+        // Initial call to update the dashboard
+        updateDashboard();
+    </script>
+</body>
+</html>
